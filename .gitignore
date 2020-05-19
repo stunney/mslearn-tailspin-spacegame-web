@@ -334,3 +334,7 @@ ASALocalRun/
 .mfractor/
 
 CodeCoverage/
+
+# SonarQube
+.sonarqube/
+.vscode/
