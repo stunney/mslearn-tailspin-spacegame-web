@@ -18,10 +18,8 @@ steps:
     projects: '**/*.Tests.csproj'
 
 - task: DotNetCoreCLI@2
-  displayName: 'Publish the project - ${{ parameters.buildConfiguration }}'
+  displayName: 'Pack the project - $(buildConfiguration)'
   inputs:
-    command: 'publish'
+    command: 'pack'
     projects: '**/*.csproj'
-    publishWebProjects: false
-    arguments: '--no-build --configuration ${{ parameters.buildConfiguration }} --output $(Build.ArtifactStagingDirectory)/${{ parameters.buildConfiguration }}'
-    zipAfterPublish: true
+    arguments: '--no-build --configuration $(buildConfiguration)'
