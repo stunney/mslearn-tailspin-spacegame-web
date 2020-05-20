@@ -11,12 +11,17 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="GitVersionTask" Version="5.3.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="nunit" Version="3.10.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tailspin.SpaceGame.Models\Tailspin.SpaceGame.Models.csproj" />
     <ProjectReference Include="..\Tailspin.SpaceGame.Web\Tailspin.SpaceGame.Web.csproj" />
   </ItemGroup>
 

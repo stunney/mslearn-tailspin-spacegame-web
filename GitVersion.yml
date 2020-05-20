@@ -1,0 +1,7 @@
+assembly-versioning-scheme: MajorMinorPatch
+next-version: 0.1.0
+branches:
+  master:
+    regex: master
+    tag: build
+    
